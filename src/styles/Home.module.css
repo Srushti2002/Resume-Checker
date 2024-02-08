@@ -18,7 +18,7 @@
     flex-direction: row;
     column-gap:100px;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
   
   /* Home Row One Left */
@@ -33,23 +33,24 @@
     color: #07001C;
     font-size: 40px;
     font-weight: 500;
-    width: 60%;
+    width: 80%;
   }
   
   .homeRowOneLeftContent {
     color: #444;
     font-size: 15px;
     font-weight: 400;
-    width:80%;
+    width:100%;
   }
   
   .homeRowOneLeftButton {
     color: #F7F7F7;
     font-size: 24px;
-    width: 33%;
+    width: 42%;
     border-radius: 35px;
     background: #3658C1;
     display: inline-flex;
+    text-align: center;
     padding: 15px 60px;
     text-decoration: none;
     align-items: center;
@@ -75,16 +76,16 @@
     flex-direction: row;
     align-items: center;
     column-gap:100px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
   
   /* Home Row Two Left */
   .homeRowTwoLeft {
-    width:100%;
+    width: 70%;
   }
  
   .homeRowTwoLeft img {
-    width:600px;
+    width:500px;
   }
   
   /* Home Row Two Right */
@@ -115,7 +116,7 @@
     color: #F7F7F7;
     font-size: 24px;
     border-radius: 35px;
-    width:33%;
+    width: 42%;
     display: flex;
     background: #3658C1;
     display: inline-flex;
