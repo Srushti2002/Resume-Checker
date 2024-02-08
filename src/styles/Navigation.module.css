@@ -1,0 +1,53 @@
+.navWrapper {
+    background: #3658C1;
+    padding: 1rem 1rem; 
+  } 
+  .menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+  .heading {
+    color: #F7F7F7; 
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    }
+  
+  .menuList {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+  }
+
+  .menuItemList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap:5rem;
+  }
+  
+  li {
+    list-style: none; 
+  }
+ 
+  .linkStyle {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+
+  .signup{
+    border-radius: 6px;
+    border: 4px solid #F2F2F2;
+    padding: 10px 20px;
+  }
