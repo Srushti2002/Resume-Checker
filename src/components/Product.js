@@ -81,6 +81,7 @@ export default function Product() {
                           <div className={styles.jobDescribeBlock}>
                             <label>Job Description</label>
                             <textarea 
+                            placeholder= "Describe your job desciption as mentioned in the JD section "
                             value={jobDescription} 
                             onChange={(e) => setJobDescription(e.target.value)} />
                           </div>

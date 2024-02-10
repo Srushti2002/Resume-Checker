@@ -1,14 +1,10 @@
 import React from 'react';
 import styles from '../styles/Navigation.module.css';
 import { Link } from 'react-router-dom';
-// import 'aos/dist/aos.css'
-// import AOS from 'aos'
-
 
 export default function Navigation() {
 
   return (
-    
     <nav className={styles.navWrapper}>
             <div className={styles.menu}>
                 <div className={styles.heading}>Intellirecruit</div>
