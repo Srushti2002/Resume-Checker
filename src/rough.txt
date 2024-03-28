@@ -119,3 +119,549 @@ const Dropzone = ({ setFieldValue }) => {
     );
   };
   
+// import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import Airtel from '../../images/airtel.png';
+import UBA from '../../images/UBA.png';
+import Paga from '../../images/paga.png';
+import MTN from '../../images/MTN.png';
+import Dangote from '../../images/dangote.png';
+import Firstbank from '../../images/firstbank.png';
+import Cloud from '../../images/cloud.png';
+import Ebay from '../../images/ebay.png';
+import Tux from '../../images/tux.png';
+import Spotify from '../../images/spotify.png';
+import Airbnb from '../../images/airbnb.png';
+import Facebook from '../../images/facebook.png';
+import Cocacola from '../../images/cocacola.png';
+import Zoom from '../../images/zoom.png';
+import Creativecloud from '../../images/creativecloud.png';
+import Netflix from '../../images/netflix.png';
+import Discord from '../../images/discord.png';
+import Figma from '../../images/figma.png';
+import Paypal from '../../images/paypal.png';
+import Adobe from '../../images/adobe.png';
+import styles from '../../styles/Home/Brand.module.css';
+
+export default function Brand() {
+
+    const data = [
+        { rowOne: [Airtel, UBA, Paga, MTN, Dangote, Firstbank] },
+        {rowTwo: [Cloud, Ebay, Tux, Spotify, Airbnb, Facebook, Cocacola] },
+        {rowThree: [Zoom, Creativecloud, Netflix, Discord, Figma, Paypal, Adobe] }
+    ]
+  return (
+    <div className={styles.brandWrapper}>
+        <div className={styles.brandMain}>
+            {data.map((item, index)=> (
+                <ul 
+                className={styles.brandList}
+                
+                key={index}>
+                    {Object.values(item)[0].map((image, imageIndex)=> (
+                        <li className={styles.brandListItem}>
+                            <div className={styles.brandListItemImg}
+                            style={{ backgroundImage: `url(${image})`}}></div>
+                        </li>
+                    ))}
+                </ul>
+            ))}
+        </div>
+    </div>
+  )
+}
+
+// import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import Airtel from '../../images/airtel.png';
+import UBA from '../../images/UBA.png';
+import Paga from '../../images/paga.png';
+import MTN from '../../images/MTN.png';
+import Dangote from '../../images/dangote.png';
+import Firstbank from '../../images/firstbank.png';
+import Cloud from '../../images/cloud.png';
+import Ebay from '../../images/ebay.png';
+import Tux from '../../images/tux.png';
+import Spotify from '../../images/spotify.png';
+import Airbnb from '../../images/airbnb.png';
+import Facebook from '../../images/facebook.png';
+import Cocacola from '../../images/cocacola.png';
+import Zoom from '../../images/zoom.png';
+import Creativecloud from '../../images/creativecloud.png';
+import Netflix from '../../images/netflix.png';
+import Discord from '../../images/discord.png';
+import Figma from '../../images/figma.png';
+import Paypal from '../../images/paypal.png';
+import Adobe from '../../images/adobe.png';
+import styles from '../../styles/Home/Brand.module.css';
+
+export default function Brand() {
+
+    const settings = {
+        dots: false,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 2000,
+        autoplaySpeed: 2000,
+        cssEase: "linear"
+      };
+    
+  return (
+    <div className={styles.brandWrapper}>
+      <div className={styles.brandMain}>
+      <Slider {...settings} className={styles.brandList}>
+          <div className={styles.brandListItem}>
+            <img src={Airtel} className={styles.brandListItemImg} />
+          </div>
+          <div className={styles.brandListItem}>
+            <img src={UBA} className={styles.brandListItemImg} />
+          </div>
+          <div className={styles.brandListItem}>
+            <img src={Paga} className={styles.brandListItemImg} />
+          </div>
+          <div className={styles.brandListItem}>
+            <img src={MTN} className={styles.brandListItemImg} />
+          </div>
+          <div className={styles.brandListItem}>
+            <img src={Dangote} className={styles.brandListItemImg} />
+          </div>
+          <div className={styles.brandListItem}>
+            <img src={Firstbank} className={styles.brandListItemImg} />
+          </div>
+      </Slider>
+
+      
+      <Slider {...settings} className={styles.brandList}>
+          <div className={styles.brandListItem}>
+            <img src={Cloud} className={styles.brandListItemImg} />
+          </div>
+          <div className={styles.brandListItem}>
+            <img src={Ebay} className={styles.brandListItemImg} />
+          </div>
+          <div className={styles.brandListItem}>
+            <img src={Tux} className={styles.brandListItemImg} />
+          </div>
+          <div className={styles.brandListItem}>
+            <img src={Spotify} className={styles.brandListItemImg} />
+          </div>
+          <div className={styles.brandListItem}>
+            <img src={Airbnb} className={styles.brandListItemImg} />
+          </div>
+          <div className={styles.brandListItem}>
+            <img src={Facebook} className={styles.brandListItemImg} />
+          </div>
+          <div className={styles.brandListItem}>
+            <img src={Cocacola} className={styles.brandListItemImg} />
+          </div>
+      </Slider>
+
+      
+      <Slider {...settings} className={styles.brandList}>
+          <div className={styles.brandListItem}>
+            <img src={Zoom} className={styles.brandListItemImg} />
+          </div>
+          <div className={styles.brandListItem}>
+            <img src={Creativecloud} className={styles.brandListItemImg} />
+          </div>
+          <div className={styles.brandListItem}>
+            <img src={Netflix} className={styles.brandListItemImg} />
+          </div>
+          <div className={styles.brandListItem}>
+            <img src={Discord} className={styles.brandListItemImg} />
+          </div>
+          <div className={styles.brandListItem}>
+            <img src={Figma} className={styles.brandListItemImg} />
+          </div>
+          <div className={styles.brandListItem}>
+            <img src={Paypal} className={styles.brandListItemImg} />
+          </div>
+          <div className={styles.brandListItem}>
+            <img src={Adobe} className={styles.brandListItemImg} />
+          </div>
+      </Slider>
+      </div>
+    </div>
+  )
+}
+
+import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import styles from '../../styles/Home/Brand.module.css';
+
+// Define your image imports
+import Airtel from '../../images/airtel.png';
+import UBA from '../../images/UBA.png';
+import Paga from '../../images/paga.png';
+import MTN from '../../images/MTN.png';
+import Dangote from '../../images/dangote.png';
+import Firstbank from '../../images/firstbank.png';
+import Cloud from '../../images/cloud.png';
+import Ebay from '../../images/ebay.png';
+import Tux from '../../images/tux.png';
+import Spotify from '../../images/spotify.png';
+import Airbnb from '../../images/airbnb.png';
+import Facebook from '../../images/facebook.png';
+import Cocacola from '../../images/cocacola.png';
+import Zoom from '../../images/zoom.png';
+import Creativecloud from '../../images/creativecloud.png';
+import Netflix from '../../images/netflix.png';
+import Discord from '../../images/discord.png';
+import Figma from '../../images/figma.png';
+import Paypal from '../../images/paypal.png';
+import Adobe from '../../images/adobe.png';
+
+export default function Brand() {
+    const settings = {
+        dots: false,
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        autoplay: true,
+        autoplaySpeed: 5000, // Increase autoplaySpeed
+        speed: 1500, // Increase speed
+      };
+  const rows = [
+    [Airtel, UBA, Paga, MTN, Dangote, Firstbank],
+    [Cloud, Ebay, Tux, Spotify, Airbnb, Facebook, Cocacola],
+    [Zoom, Creativecloud, Netflix, Discord, Figma, Paypal, Adobe],
+  ];
+
+  return (
+    <div className={styles.brandWrapper}>
+      <div className={styles.brandMain}>
+        {rows.map((images, index) => (
+          <Slider {...settings} key={index} className={styles.brandList}>
+            {images.map((image, imgIndex) => (
+              <div className={styles.brandListItem} key={imgIndex}>
+                <img src={image} className={styles.brandListItemImg} alt={`logo-${index}-${imgIndex}`} />
+              </div>
+            ))}
+          </Slider>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+/* .brandWrapper{
+    background-color: #000;
+    padding: 100px 0px;
+}
+.brandMain{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.brandList {
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+  
+.brandListItem {
+  margin: 0 10px; 
+}
+.brandListItemImg {  
+  max-width: 30px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+} */
+
+import React, { useState, useEffect } from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import styles from '../../styles/Home/Brand.module.css';
+
+// Define your image imports
+import Airtel from '../../images/airtel.png';
+import UBA from '../../images/UBA.png';
+import Paga from '../../images/paga.png';
+import MTN from '../../images/MTN.png';
+import Dangote from '../../images/dangote.png';
+import Firstbank from '../../images/firstbank.png';
+import Cloud from '../../images/cloud.png';
+import Ebay from '../../images/ebay.png';
+import Tux from '../../images/tux.png';
+import Spotify from '../../images/spotify.png';
+import Airbnb from '../../images/airbnb.png';
+import Facebook from '../../images/facebook.png';
+import Cocacola from '../../images/cocacola.png';
+import Zoom from '../../images/zoom.png';
+import Creativecloud from '../../images/creativecloud.png';
+import Netflix from '../../images/netflix.png';
+import Discord from '../../images/discord.png';
+import Figma from '../../images/figma.png';
+import Paypal from '../../images/paypal.png';
+import Adobe from '../../images/adobe.png';
+
+export default function Brand() {
+  const logos = [
+    [Airtel, UBA, Paga, MTN, Dangote, Firstbank],
+    [Cloud, Ebay, Tux, Spotify, Airbnb, Facebook, Cocacola],
+    [Zoom, Creativecloud, Netflix, Discord, Figma, Paypal, Adobe],
+  ];
+
+  const [positions, setPositions] = useState([]);
+
+  useEffect(() => {
+    const initialPositions = logos.map(() => 0);
+    setPositions(initialPositions);
+
+    const sliderInterval = setInterval(() => {
+      setPositions(prevPositions =>
+        prevPositions.map((prevPosition, rowIndex) => {
+          const rowLength = logos[rowIndex].length;
+          const newPosition = prevPosition - 1;
+          return newPosition <= -100 * rowLength ? 0 : newPosition;
+        })
+      );
+    }, 50);
+
+    return () => clearInterval(sliderInterval);
+  }, [logos]);
+
+  return (
+    <div className={styles.brandWrapper}>
+      {logos.map((row, rowIndex) => (
+        <div key={rowIndex} className={styles.brandList}  style={{ transform: `translateX(${positions[rowIndex]}%)` }}>
+          {row.map((logo, index) => (
+            <div key={index} className={styles.brandListItem}  style={{ backgroundImage: `url(${logo})` }}  />
+          ))}
+        </div>
+      ))}
+    </div>
+  );
+};
+.brandWrapper {
+  background-color: black;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.brandList {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  animation: slide infinite linear;
+}
+
+.brandListItem {
+  width: 100px; /* Adjust width as needed */
+  height: 40px; /* Adjust height as needed */
+  margin-right: 20px; /* Adjust margin as needed */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+  
+  import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import styles from '../../styles/Home/Brand.module.css';
+
+// Define your image imports
+import Airtel from '../../images/airtel.png';
+import UBA from '../../images/UBA.png';
+import Paga from '../../images/paga.png';
+import MTN from '../../images/MTN.png';
+import Dangote from '../../images/dangote.png';
+import Firstbank from '../../images/firstbank.png';
+import Cloud from '../../images/cloud.png';
+import Ebay from '../../images/ebay.png';
+import Tux from '../../images/tux.png';
+import Spotify from '../../images/spotify.png';
+import Airbnb from '../../images/airbnb.png';
+import Facebook from '../../images/facebook.png';
+import Cocacola from '../../images/cocacola.png';
+import Zoom from '../../images/zoom.png';
+import Creativecloud from '../../images/creativecloud.png';
+import Netflix from '../../images/netflix.png';
+import Discord from '../../images/discord.png';
+import Figma from '../../images/figma.png';
+import Paypal from '../../images/paypal.png';
+import Adobe from '../../images/adobe.png';
+
+export default function Brand() {
+    const settings = {
+        dots: false,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        // autoplay: true,
+        autoplaySpeed: 0, 
+        speed: 3000, // Increase speed
+      };
+  const rows = [
+    [Airtel, UBA, Paga, MTN, Dangote, Firstbank, Cloud],
+    [Cloud, Ebay, Tux, Spotify, Airbnb, Facebook, Cocacola],
+    [Zoom, Creativecloud, Netflix, Discord, Figma, Paypal, Adobe],
+  ];
+
+  return (
+    <div className={styles.brandWrapper}>
+      <div className={styles.brandMain}>
+        {rows.map((images, index) => (
+          <Slider {...settings} key={index} className={styles.brandList}>
+            {images.map((image, imgIndex) => (
+              <div className={styles.brandListItem} key={imgIndex}>
+                <img src={image} className={styles.brandListItemImg} alt={`logo-${index}-${imgIndex}`} />
+              </div>
+            ))}
+          </Slider>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+.brandWrapper{
+    background-color: #000;
+    padding: 100px 0px;
+    overflow: hidden;
+}
+.brandMain{
+  display: flex;
+  margin: 0px 110px;
+  flex-direction: column;
+  row-gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.brandList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+  
+.brandListItem {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.brandListItemImg { 
+  height: 35px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: auto;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+
+
+import React, { useState, useEffect } from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import styles from '../../styles/Home/Brand.module.css';
+
+// Define your image imports
+import Airtel from '../../images/airtel.png';
+import UBA from '../../images/UBA.png';
+import Paga from '../../images/paga.png';
+import MTN from '../../images/MTN.png';
+import Dangote from '../../images/dangote.png';
+import Firstbank from '../../images/firstbank.png';
+import Cloud from '../../images/cloud.png';
+import Ebay from '../../images/ebay.png';
+import Tux from '../../images/tux.png';
+import Spotify from '../../images/spotify.png';
+import Airbnb from '../../images/airbnb.png';
+import Facebook from '../../images/facebook.png';
+import Cocacola from '../../images/cocacola.png';
+import Zoom from '../../images/zoom.png';
+import Creativecloud from '../../images/creativecloud.png';
+import Netflix from '../../images/netflix.png';
+import Discord from '../../images/discord.png';
+import Figma from '../../images/figma.png';
+import Paypal from '../../images/paypal.png';
+import Adobe from '../../images/adobe.png';
+
+export default function Brand() {
+  const logos = [
+    [Airtel, UBA, Paga, MTN, Dangote, Firstbank],
+    [Cloud, Ebay, Tux, Spotify, Airbnb, Facebook, Cocacola],
+    [Zoom, Creativecloud, Netflix, Discord, Figma, Paypal, Adobe],
+  ];
+
+  return (
+    <div className={styles.brandWrapper}>
+      {logos.map((row, rowIndex) => (
+        <div key={rowIndex} className={styles.brandList}>
+          {row.map((logo, index) => (
+            <div key={index} className={styles.brandListItem}  style={{ backgroundImage: `url(${logo})` }}  />
+          ))}
+        </div>
+      ))}
+    </div>
+  );
+};
+
+.brandWrapper {
+  background-color: black;
+  padding: 100px 0px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  row-gap: 77px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.brandList {
+  display: flex;
+  flex-direction: row;
+  column-gap: 55px;
+  align-items: center;
+  justify-content: center;
+  animation: slide infinite linear;
+}
+
+.brandListItem {
+  width: 100px; /* Adjust width as needed */
+  height: 40px; /* Adjust height as needed */
+  margin-right: 20px; /* Adjust margin as needed */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+  

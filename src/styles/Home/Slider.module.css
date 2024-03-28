@@ -1,0 +1,66 @@
+.sliderWrapper {
+    z-index: 2;
+    background-color: black;
+    padding: 0px 85px 100px;
+}
+.sliderMain{
+}
+.sliderCarousel{
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    background: var(--DOML-gradient-1, linear-gradient(267deg, #00F0FF 4.01%, #5200FF 57.55%, #FF2DF7 114.97%));
+    padding: 85px 100px;
+    align-items: center;
+    justify-content: center;
+}
+.sliderImgSection {
+    width: 55%;
+    height: 100%; 
+}
+.sliderImg {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    border-radius: 50px;
+    border: 3px solid var(--DOML-gradient-1, #00F0FF);
+    /* box-shadow: 20px 300px 30px 10px rgba(0, 0, 0, 0.25); */
+}
+
+.sliderText {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.sliderContent{
+    color: #FFF;
+    font-family: "Abhaya Libre";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 39.38px */
+    margin-bottom: 25px;
+}
+.sliderName {
+    color: #FFF;
+    font-family: "Abhaya Libre";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+}
+.sliderPosition {
+    color: #FFF;
+    font-family: "Abhaya Libre";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+.sliderDiscord {
+    width: 90px;
+    height: 28px;
+    background-size: cover;
+}

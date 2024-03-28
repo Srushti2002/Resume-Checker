@@ -1,4 +1,28 @@
 *{
   margin:0;
   padding:0;
+  z-index: 1;
+  color:#fff;
+  overflow-x: hidden;
+}
+.appContainer {
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.videoPlayer {
+  width:100%;
+  height: 100vh;
+  background-color: black;
+  overflow: hidden;
+}
+
+.actualVideo {
+  height:100%;
+  width:100%;
+  overflow: hidden;
+  transform: scale(1.5); 
+  object-fit: contain;
 }

@@ -1,0 +1,67 @@
+/* 
+.mainContainer{
+  background-color: black;
+  padding: 100px 100px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  row-gap: 77px;
+  z-index: 1;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.mainContainer .container img{
+  height: 35px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  object-fit: cover;
+  z-index: 4;
+}
+ */
+
+ .brandWrapper {
+  background-color: black;
+  padding: 100px 0px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  row-gap: 77px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.brandList {
+  display: flex;
+  flex-direction: row;
+  column-gap: 55px;
+  align-items: center;
+  justify-content: center;
+  animation: slide infinite linear;
+}
+
+.brandListItem {
+  width: 100px; /* Adjust width as needed */
+  height: 40px; /* Adjust height as needed */
+  margin-right: 20px; /* Adjust margin as needed */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+  
