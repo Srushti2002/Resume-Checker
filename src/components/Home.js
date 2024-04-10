@@ -1,15 +1,25 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import 'aos/dist/aos.css'
+import AOS from 'aos'
 import About from './Home/About';
 import Screener from './Home/Screener';
 import Slider from './Home/Slider';
 import Brand from './Home/Brand';
 import Hero from './Home/Hero';
+import Contact from './Home/Contact';
 // import img1 from '../images/homeresumeImg.png';
 // import img2 from '../images/homepcImg.png';
 // import styles from '../styles/Home.module.css';
 
 export default function Home() {
+  React.useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+    })
+  }, []);
+  
   return (
     // <div className={styles.homeWrapper}>
     //     <div className={styles.homeMain}>
@@ -48,7 +58,9 @@ export default function Home() {
       <About />
       <Slider />
       <Screener />
+      <Contact />
       <Brand />
+
     </div>
   )
 }

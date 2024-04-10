@@ -36,14 +36,15 @@ export default function About() {
         <div className={styles.abtMain}>
             {data.map((item, key)=> (
                 <div className={`${styles.abtData} ${key % 2 === 0 ? styles.even : styles.odd}`}>
-                    <div className={styles.abtText}>
+                    <div className={styles.abtText} data-aos="fade-up-right">
                         <div className={styles.abtMainHead}>{item.mainHead}</div>
                         <div className={styles.abtSubHead}>{item.subHead}</div>
                         <div className={styles.abtContent}>{item.content}</div>
                         <div className={styles.abtLine}></div>
                         <Link className={styles.abtButton}>{item.button}<Arrow /></Link>  
                     </div>
-                    <div className={styles.abtImg}>
+                    <div className={styles.abtImg}
+                     data-aos="fade-up-left">
                         <img src={item.img}/>
                     </div>
                 </div>

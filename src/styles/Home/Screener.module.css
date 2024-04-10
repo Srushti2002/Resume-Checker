@@ -1,5 +1,6 @@
 .screenWrapper{
  background-color: #000;
+ overflow: hidden;   
 }
 
 .screenMain {
@@ -8,6 +9,7 @@
     justify-content: center;
     column-gap: 50px;
     align-items: center;
+    overflow: hidden;
     max-width: 100%;
 }
 .screenText {
@@ -107,6 +109,6 @@
 .screenImg {
     max-width: 100%;  
 }
-img {
+.screenImg img {
    min-width: 450px;
 }

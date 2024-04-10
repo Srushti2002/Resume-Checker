@@ -665,3 +665,461 @@ export default function Brand() {
   background-repeat: no-repeat;
 }
   
+
+export default function Brand() {
+  const photos = [
+    Airtel, UBA, Paga, MTN, Dangote, Firstbank,
+    Cloud, Ebay, Tux, Spotify, Airbnb, Facebook, Cocacola,
+    Zoom, Creativecloud, Netflix, Discord, Figma, Paypal, Adobe
+  ];
+
+
+  return (
+    <div className={styles.brandWrapper}>
+      <div className={styles.brandMain}>
+      <div className={styles.brandList}>
+        <Marquee className={styles.brandListItem}  
+        velocity={10}
+        radius={50}>
+          {photos.slice(0,7).map((photo, index)=> (
+            <Photo
+            className={styles.brandListItemImg}
+            key={`marquee-row-1-${index}`}
+            src={photo}
+            alt={`Brand ${index}`}
+            />
+          ))}
+        </Marquee>
+      </div>
+      <div className={styles.brandList}>
+        <Marquee className={styles.brandListItem}  
+        velocity={10}
+        radius={50}>
+          {photos.slice(7,14).map((photo, index)=> (
+            <Photo
+            className={styles.brandListItemImg} 
+            key={`marque-row-2-${index}`}
+            src={photo}
+            alt={`Brand ${index}`}
+            />
+          ))}
+        </Marquee>
+      </div>
+      <div className={styles.brandList}>
+          <Marquee className={styles.brandListItem} 
+          velocity={10}
+          radius={50}
+          >
+            {photos.slice(14, 21).map((photo, index)=> (
+            <Photo
+            className={styles.brandListItemImg}
+            key={`marque-row-3-${index}`} 
+            src={photo}
+            alt={`Brand ${index}`}
+            />
+            ))}
+          </Marquee>
+      </div>
+
+      </div>
+    </div>
+  );
+};
+
+.brandWrapper{
+  background-color: black;
+  padding: 100px 100px;
+  height: 100%;
+  width:100%;
+}
+.brandMain{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 50px;
+  height: 100%;
+  width:100%;
+}
+
+.brandList{
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+
+}
+
+.brandListItem{
+  max-height:100%;
+  max-width:100%;  
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  column-gap: 10px;
+}
+.brandListItemImg {
+  height: 35px;
+  width:50px;
+  overflow:hidden;
+  object-fit: contain;
+}
+
+import React from "react";
+import styles from '../../styles/Home/Brand.module.css';
+import  '../../styles/Home/DefaultBrand.css';
+import { motion } from "framer-motion";
+import Marquee from "react-marquee-slider";
+// import styled from "styled-components";
+// import { Marquee } from "@wethegit/react-marquee";
+// import "@wethegit/react-marquee/style.css"
+import Airtel from '../../images/airtel.png';
+import UBA from '../../images/UBA.png';
+import Paga from '../../images/paga.png';
+import MTN from '../../images/MTN.png';
+import Dangote from '../../images/dangote.png';
+import Firstbank from '../../images/firstbank.png';
+import Cloud from '../../images/cloud.png';
+import Ebay from '../../images/ebay.png';
+import Tux from '../../images/tux.png';
+import Spotify from '../../images/spotify.png';
+import Airbnb from '../../images/airbnb.png';
+import Facebook from '../../images/facebook.png';
+import Cocacola from '../../images/cocacola.png';
+import Zoom from '../../images/zoom.png';
+import Creativecloud from '../../images/creativecloud.png';
+import Netflix from '../../images/netflix.png';
+import Discord from '../../images/discord.png';
+import Figma from '../../images/figma.png';
+import Paypal from '../../images/paypal.png';
+import Adobe from '../../images/adobe.png';
+
+
+export default function Brand() {
+  const photos = [
+    Airtel, UBA, Paga, MTN, Dangote, Firstbank,
+    Cloud, Ebay, Tux, Spotify, Airbnb, Facebook, Cocacola,
+    Zoom, Creativecloud, Netflix, Discord, Figma, Paypal, Adobe
+  ];
+
+
+  return (
+    <div className={styles.brandWrapper}>
+      <div className={styles.brandMain}>
+      <div className={styles.brandList}>
+        <Marquee className={styles.brandListItem}  
+        velocity={60}
+        radius={5}>
+          {photos.slice(0,7).map((photo, index)=> (
+            <img
+            className={styles.brandListItemImg}
+            key={`marquee-row-1-${index}`}
+            src={photo}
+            alt={`Brand ${index}`}
+            />
+          ))}
+        </Marquee>
+      </div>
+      <div className={styles.brandList}>
+        <Marquee className={styles.brandListItem}  
+        velocity={60}
+        radius={5}
+        style={{width:"30px"}}>
+          {photos.slice(7,14).map((photo, index)=> (
+            <img
+            className={styles.brandListItemImg} 
+            key={`marque-row-2-${index}`}
+            src={photo}
+            alt={`Brand ${index}`}
+            />
+          ))}
+        </Marquee>
+      </div>
+      <div className={styles.brandList}>
+          <Marquee className={styles.brandListItem} 
+          velocity={60}
+          radius={5}
+          >
+            {photos.slice(14, 21).map((photo, index)=> (
+            <img
+            className={styles.brandListItemImg}
+            key={`marque-row-3-${index}`} 
+            src={photo}
+            alt={`Brand ${index}`}
+            />
+            ))}
+          </Marquee>
+      </div>
+
+      </div>
+    </div>
+  );
+};
+
+.brandWrapper{
+  background-color: black;
+  padding: 100px 100px;
+
+}
+.brandMain{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 50px;
+  height: 100%;
+  width:100%;
+}
+
+.brandList{
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+
+}
+
+.brandListItem{
+  max-height:100%;
+  max-width:100%;  
+  width:50px;
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  column-gap: 10px;
+}
+.brandListItemImg {
+  height: 30px;
+  width:50px;
+  overflow:hidden;
+  object-fit: contain;
+}
+
+.cardContainer {
+  background-color: transparent;
+  width: 200px;
+  height: 250px;
+  overflow-y: hidden;
+  perspective: 1000px; 
+}
+
+.flipCard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  overflow-y: hidden;
+}
+
+.cardContainer:hover .flipCard {
+    transform: rotateY(180deg);
+}
+
+
+.flipCardFront,
+.flipCardBack {  
+    overflow-y: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flipCardFront {
+    background-color: black;
+    color: black;
+}
+
+.svgImg {    
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+}
+
+.svgHeading { 
+    color: white;  
+}
+
+.flipCardBack {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.svgPara {
+    color: #FFF;
+    font-family: Arial;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+ 
+}
+
+
+/* .checkCards .cardContainer .flipCard .flipCardBack .cardButton {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 13px;
+    margin: 1vw;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+} */
+
+
+/* .cardContainer .flipCard:hover {
+    transform: rotateY(0.5turn);
+  }
+  .flipCard {
+  
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  }
+  
+  .cardContainer:focus {
+    outline: 0;
+  }
+  
+  .cardContainer:hover .flipCard,
+  .cardContainer:focus .flipCard{
+    transform: rotateY(180deg);
+    
+    transition: all 1s ease-in-out;
+  }
+  
+  .flipCardFront,
+  .flipCardBack {
+    
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  }
+  .flipCardFront { 
+  background: linear-gradient(to left, #4364f7, #6fb1fc);
+  color: black;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flipCardBack {
+    
+  background: linear-gradient(to right, #4364f7, #6fb1fc);
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  h3 {
+    font-size: 20px;
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+    color: #fff;
+  }
+   */
+
+   
+/* Styling for the cards container */
+.checkCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+}
+
+/* Styling for each card container */
+.cardContainer {
+    width: 200px; /* Adjust as needed */
+    height: 300px; /* Adjust as needed */
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+/* Styling for the flip card */
+.flipCard {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+}
+
+/* Styling for the flipped state of the flip card */
+.flipCard.flipped {
+    transform: rotateY(180deg);
+}
+
+/* Styling for the front and back faces of the card */
+.flipCardFront,
+.flipCardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; /* Adjust as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the front face of the card */
+.flipCardFront {
+    background-color: #3e3e3e; /* Adjust as needed */
+    color: #FFF;
+    z-index: 2;
+}
+
+/* Styling for the back face of the card */
+.flipCardBack {
+    background-color: #FFF; /* Adjust as needed */
+    color: #3e3e3e;
+    transform: rotateY(180deg);
+}
+
+/* Styling for the image inside the card */
+.cardImg {
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    object-fit: cover;
+    border-radius: 50%; /* Adjust as needed */
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+/* Styling for the heading inside the card */
+.cardHeading {
+    font-size: 18px; /* Adjust as needed */
+    font-weight: bold;
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+/* Styling for the paragraph text inside the card */
+.cardText {
+    font-size: 14px; /* Adjust as needed */
+    text-align: center;
+    padding: 0 20px; /* Adjust as needed */
+}

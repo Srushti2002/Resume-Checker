@@ -44,7 +44,7 @@ export default function Footer() {
     ]
   return (
     <div className={styles.footerWrapper}>
-        <div className={styles.footerMain}>
+        <div className={styles.footerMain} data-aos="fade-up">
             <div className={styles.footerTop}>
                 <div className={styles.footerTopLeft}>
                     <div className={styles.topLeftMainHead}><IntelFooterLogo />Intellirecruit</div>

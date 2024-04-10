@@ -6,8 +6,8 @@ export default function Hero() {
     
   return (
     <div className={styles.heroWrapper}>
-        <div className={styles.heroMain}>
-            <IntelLogoHero className={styles.heroLogo} />
+        <div className={styles.heroMain}  data-aos="flip-up">
+            <IntelLogoHero className={styles.heroLogo}/>
             <div className={styles.heroText}>Intellirecruit</div>
         </div>
         

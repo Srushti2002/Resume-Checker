@@ -4,8 +4,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Home from './components/Home';
 import Features from './components/Features';
-import Contact from './components/Contact';
-import Signup from './components/Signup';
 import Product from './components/Product';
 import Footer from './components/Footer';
 import Video from './Video/IntroVideo.mp4';
@@ -20,7 +18,7 @@ function App() {
   }
   return (
     <div className="appContainer">
-    {videoPlayed ? (
+    {/* {videoPlayed ? (
       <div className={`videoPlayer ${videoPlayed ? '' : 'hidden'}`}>
         <video 
         src={Video}
@@ -30,18 +28,18 @@ function App() {
         className="actualVideo"
         />
       </div>
-    ) :
-    (<Router className={`routerContent ${videoPlayed ? 'visible' : ''}`}>
+    ) : */}
+    {/* ( */}
+      <Router className={`routerContent ${videoPlayed ? 'visible' : ''}`}>
       <Navigation />
         <Routes>
           <Route path="/" element={<Home />} exact />
           <Route path="/features" element={<Features />} /> 
-          <Route path="/product" element={<Product />} />   
-          <Route path="/contact" element={<Contact />}/>
-          <Route path="/signup" element={<Signup />} />
+          <Route path="/product" element={<Product />} />
         </Routes>
         <Footer />
-    </Router>)}
+    </Router>
+    {/* )} */}
     </div>
     );
 }

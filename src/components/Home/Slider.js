@@ -44,17 +44,19 @@ export default function Slider() {
   ]
   return (
     <div className={styles.sliderWrapper}>
-      
+      <div data-aos="flip-down">
       <Carousel
        className={styles.sliderMain}
       autoplay={true}  // Enable autoplay
       autoplayInterval={3000} // Set autoplay interval to 3 seconds (3000 milliseconds)
       wrapAround={true} // Enable wrap around so the carousel loops infinitely
       slidesToShow={1}
-      cellSpacing={1}>
+      cellSpacing={1}
+      >
         {
           data.map((item)=> (
-            <div className={styles.sliderCarousel}>
+            <div className={styles.sliderCarousel}
+            >
               <div 
               key={item.key}
               className={styles.sliderImgSection}>
@@ -75,6 +77,9 @@ export default function Slider() {
           ))
         }
       </Carousel>
+
+      </div>
+      
       
     </div>
   )
