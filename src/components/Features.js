@@ -20,7 +20,7 @@ export default function Features() {
       <FeHero />
       <FeCards />
       <FeCheck />
-      {/* <FeQuotes /> */}
+      <FeQuotes />
       <FeEvaluate />
     </div>
   )

@@ -1,145 +1,94 @@
-import React, {useState } from 'react';
-import img1 from '../images/productImgOne.png';
-import { ReactComponent as TickMark } from '../svgFiles/tickMarkLogo.svg';
-import styles from '../styles/Product.module.css';
-import { useDropzone } from 'react-dropzone';
+import React, { useState } from 'react';
+import axios from 'axios'; // For making HTTP requests, install axios if not already installed
+import { getDocument } from 'pdfjs-dist';
 
-const items = ["Simplify interview coordination with automated scheduling tools, reducing administrative workload.",
-              " Match candidates to job requirements seamlessly, saving time and  improving hiring accuracy.",
-            "Evaluate candidate skills objectively with AI-powered assessments tailored to your job requirements."]
+const Product = () => {
+    const [jobDescription, setJobDescription] = useState('');
+    const [resumeFile, setResumeFile] = useState(null);
+    const [question, setQuestion] = useState('');
+    const [answer, setAnswer] = useState('');
 
-export default function Product() {
+    const handleJobDescriptionChange = (event) => {
+        setJobDescription(event.target.value);
+    };
 
-  const [activeTab, setActiveTab] = useState('option1');
-  const [jobDescription, setJobDescription] = useState('');
-  const [resume, setResume] = useState(null);
+    const extractTextFromPDF = async (pdfData) => {
+        const pdf = await getDocument({ data: pdfData }).promise;
+        let resumeText = '';
+        for (let i = 1; i <= pdf.numPages; i++) {
+            const page = await pdf.getPage(i);
+            const textContent = await page.getTextContent();
+            const pageText = textContent.items.map((item) => item.str).join(' ');
+            resumeText += pageText;
+        }
+        return resumeText;
+    };
 
-
-  const handleApply = () => {
-    console.log("job description", jobDescription);
-    console.log("Uploaded resume", resume);
-  }
-
-  const handlePreviewResume = () => {
-    if(resume) {
+    const handleResumeFileChange = async (event) => {
+      const file = event.target.files[0];
       const reader = new FileReader();
-      reader.onload = () => {
-        const url = reader.result;
-        window.open(url, '_blank');
-      }
-      reader.readAsDataURL(resume);
-    }
+      
+      reader.onload = async (e) => {
+          const pdfData = new Uint8Array(e.target.result);
+          try {
+              const resumeText = await extractTextFromPDF(pdfData);
+              setResumeFile(resumeText);
+          } catch (error) {
+              console.error('Error extracting text from PDF:', error);
+              // Handle the error, such as displaying an error message to the user
+          }
+      };
+      
+      reader.readAsArrayBuffer(file);
   };
+  
 
-  const handleClear = () => {
-    setJobDescription('');
-    setResume(null);
-  }
+    const handleQuestionClick = async (question) => {
+        setQuestion(question);
 
-  const handleTellAbtRes = () => {
-    //add the logic(code) here for tell me abt yourself button
-    console.log("Analyzing resume...");
-  }
+        // Send HTTP request to backend API
+        try {
+            const response = await axios.post('Enter_the _url', {
+                jobDescription: jobDescription,
+                resumeText: resumeFile,
+                question: question
+            });
+            setAnswer(response["data"]["candidates"][0]["content"]["parts"][0]["text"]);
+        } catch (error) {
+            console.error('Error:', error);
+            setAnswer('Error occurred. Please try again later.');
+        }
+    };
 
-  const handleImproveSkill = () => {
-    //add the logic(code) here for improve skills button
-    console.log("Imporve your skills.....");
-  }
-
-  const handlePerMatch = () => {
-    //add the logic(code) here for percentage match button
-    console.log("Percentage match....");
-  }
-
-  const onDrop = (acceptedFiles) => {
-    setResume(acceptedFiles[0]);
-  };
-
-  const { getRootProps, getInputProps } = useDropzone({
-    onDrop, 
-    accept: 'application/pdf'
-  });
-
-  return (
-    <div className={styles.productWrapper}>
-        <div className={styles.productMain}>    
-            <div className={styles.productLeft}>
-                <div className={styles.leftTabMenu}>
-                    <button onClick={() => setActiveTab('option1')} className={activeTab === 'option1' ? styles.active : ''}>1. Add Resume</button>
-                    <button onClick={() => setActiveTab('option2')} className={activeTab === 'option2' ? styles.active : ''}>2. Save Resume</button>
-                    <button onClick={() => setActiveTab('option3')} className={activeTab === 'option3' ? styles.active : ''}>3. Create Resume</button>
-                </div>
-                <div className={styles.leftTabContent}>
-                    {activeTab === 'option1' && (
-                        <div className={styles.tabOneWrapper}>
-                          <div className={styles.addResumeBlock}>
-                            <div className={styles.addResumeBlockHeading}>Add Your Resume</div>
-                            <div className={styles.addResumeBlockText}>Use our Uploader to save your resume and reach thousands of  
-                            active Employers.</div>
-                          </div>
-
-                          <div className={styles.jobDescribeBlock}>
-                            <label>Job Description</label>
-                            <textarea 
-                            placeholder= "Describe your job desciption as mentioned in the JD section "
-                            value={jobDescription} 
-                            onChange={(e) => setJobDescription(e.target.value)} />
-                          </div>
-
-                          <div className={styles.uploadResumeBlock}>
-                            <label>Upload Resume</label>
-                            <div className={styles.uploadResumeBlockText}>
-                            {/* Drag and drop area */}
-                            <div {...getRootProps()} className={styles.dropzone}>
-                              <p className={styles.uploadResumeBlockInput} >Drag 'n' drop PDF files here, or click to select files</p>
-        
-                              <input {...getInputProps()} />
-                            </div>
-                            {resume && <p>Resume Uploaded : {resume.name} </p>}
-                            </div>
-                          
-                          <div className={styles.uploadResumeBlockButton}>
-                            <button onClick={handleApply}>Apply</button>
-                            <button onClick={handlePreviewResume}>Preview Resume</button>
-                            <button onClick={handleClear}>Clear</button>
-                          </div>
-                          </div>
-
-                          <div className={styles.addResumeButtons}>
-                            <button onClick={handleTellAbtRes}>Tell me about the resume</button>
-                            <button onClick={handleImproveSkill}>How can I improve my skills</button>
-                            <button onClick={handlePerMatch}>Percentage match</button>
-                          </div>
-                        
-                        </div>
-                    )}
-
-                    {activeTab === 'option2' && (
-                        <div className={styles.tabTwoWrapper}>Save Resume</div>
-                    )}
-
-                    {activeTab === 'option3' && (
-                        <div className={styles.tabThreeWrapper}>Create Resume</div>
-                    )}
-                </div>
+    return (
+        <div style={{backgroundColor:'black'}}>
+            <div>
+                <label>Job Description:</label>
+                <textarea value={jobDescription} onChange={handleJobDescriptionChange} />
             </div>
-            <div className={styles.productRight}>
-              <img src={img1} />
-              <div className={styles.rightHeading}>Unlock the Power of Gen AI for Your Recruitment Needs</div>
-              <div className={styles.rightContent}>
-                {items.map((item) => ( 
-                  <div className={styles.rightContentText} 
-                  key={item.id}>
-                    <TickMark />
-                    <div className={styles.rightContentTextPoints}>{item}</div>  
-                  </div>
-                )
-                )}
-              </div>
+            <div>
+                <label>Upload Resume:</label>
+                <input type="file" accept=".pdf" onChange={handleResumeFileChange} />
             </div>
-        </div>  
-    </div>
-  )
+            <div>
+                <button onClick={() => handleQuestionClick('tell me about the uploaded resume how well its matching with the job description')}>
+                    Tell me about the resume
+                </button>
+                <button onClick={() => handleQuestionClick('Tell me the missing skills which needed to be added in my resume to match the job description')}>
+                   missing skills
+                </button>
+                <button onClick={() => handleQuestionClick('how well the resume matching with jd give in percentage')}>
+                    Percentage
+                </button>
+            </div>
+            {answer && (
+                <div>
+                    <label>{question}</label>
+                    <p>{answer}</p>
+                </div>
+            )}
+        </div>
+    );
 };
 
-  
+export default Product;

@@ -1,0 +1,28 @@
+.quoteWrapper {
+    background-color: black;
+}
+.quoteMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 100px;
+}
+.quoteContainer {
+
+}
+.quoteCarousel {
+
+}
+.quoteText {
+
+}
+.quoteHeading {
+
+}
+.quoteButton {
+
+}
+.quoteReview {
+
+}
