@@ -27,11 +27,12 @@ export default function Navigation() {
                         <Link className={styles.linkStyle} to="/">Home</Link>
                         </li>
                         <li>
-                        <Link className={styles.linkStyle} to="/product">Product</Link>
-                        </li>
-                        <li>
                         <Link className={styles.linkStyle} to="/features">Features</Link>
                         </li>
+                        <li>
+                        <Link className={styles.linkStyle} to="/product">Product</Link>
+                        </li>
+                        
                     </ul>
                     <ul className={styles.menuItemListIcon}>
                       <li>

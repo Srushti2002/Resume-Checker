@@ -13,6 +13,7 @@
     padding: 85px 100px;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 .sliderImgSection {
     min-width: 25%;

@@ -52,6 +52,9 @@ export default function Slider() {
       wrapAround={true} // Enable wrap around so the carousel loops infinitely
       slidesToShow={1}
       cellSpacing={1}
+      renderCenterLeftControls={null} // Hide previous button
+      renderCenterRightControls={null} 
+      renderBottomCenterControls={null}
       >
         {
           data.map((item)=> (

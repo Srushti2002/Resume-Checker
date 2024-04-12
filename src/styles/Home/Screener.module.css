@@ -43,6 +43,7 @@
   -webkit-background-clip: text;
   background-size: 50%;
   animation: color 10s linear infinite; 
+  font-family: Montserrat;
 }
 
 @keyframes color {
@@ -56,6 +57,7 @@
 
 .screenContent {
     font-size: 15px;
+    font-family: Montserrat;
 }
 .screenLine {
     width:70%;
@@ -104,6 +106,7 @@
     background-clip: padding-box, border-box;
     border-radius: 40px;
     background-size: 200% 100%;
+    font-family: Montserrat;
 
 }
 .screenImg {

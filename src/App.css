@@ -1,10 +1,15 @@
 *{
   margin:0;
   padding:0;
-  z-index: 1;
   color:#fff;
-  overflow-x: hidden;
 }
+
+html, body {
+  overflow-x: hidden;
+  background-color: #000;
+  font-family: "Abhaya Libre";
+  }
+
 .appContainer {
   overflow-x: hidden;
   position: relative;

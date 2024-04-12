@@ -39,8 +39,7 @@
     height: 230px;
     perspective: 1000px;
     border-radius: 20px;
-    overflow-y: hidden;
-  
+    overflow: hidden;
   }
   
   .cardFront, .cardBack {

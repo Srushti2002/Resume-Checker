@@ -30,16 +30,14 @@
 
 .formHeading {
     color: #FFF;
-    font-family: "Abhaya Libre";
-    font-size: 50px;
+    font-size: 52px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
 
 .successMessage {
-    color: #FFF;
-    font-family: "Abhaya Libre";
+    color: #FFF;    
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
