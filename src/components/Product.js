@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-function Product() {
+export default function Product() {
   const [jobDescription, setJobDescription] = useState('');
   const [resume, setResume] = useState(null);
   const [selectedQuestion, setSelectedQuestion] = useState(null);
@@ -61,4 +61,3 @@ function Product() {
   );
 }
 
-export default Product;
