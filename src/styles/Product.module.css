@@ -1,205 +1,183 @@
 .productWrapper{
-    background: #000000;
-    align-items: center;
-    justify-content: center;
+    background-color: black;
 }
-
 .productMain {
-    padding:100px 200px;
-    display: flex;
-    flex-direction: row;
-    column-gap: 90px;
-}
-
-.productLeft {
     display: flex;
     flex-direction: column;
-    row-gap: 31px;
-    width: 100%;
+    /* align-items: center; */
+    justify-content: center;
+    row-gap: 40px;
+    padding:50px 150px ;
 }
 
-.leftTabMenu{
-    display: flex;
-    flex-direction: row;
-    text-decoration: none;
-    column-gap:20px;
-}
-.leftTabMenu button{  
-    color: #2678B8;
-    background-color: #F7F7F7;
-    font-size: 16px; 
-    border: none;
-    font-weight: 500;
-}
-
-.leftTabContent{
-}
-
-.tabOneWrapper{
-    display: flex;
-    flex-direction: column;
-    row-gap: 25px;
-}
-
-.addResumeBlock{
-    display: flex;
-    flex-direction: column;
-    row-gap: 5px;
-}
-
-.addResumeBlockHeading{
-    color: #000;
-    font-size: 24px;
-    font-weight: 500;
-}
-
-.addResumeBlockText{
-    color: #8E8E8E;
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.jobDescribeBlock{
+.productSecFirst {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
 }
-label{
-    color: #000;
-    font-size: 20px;
+
+.productFirstHead {
+    color: #ECECEC;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
     font-weight: 500;
+    line-height: normal;
+}
+.productFirstContent{
+    color: rgba(255, 255, 255, 0.92);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.productSecSecond {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
 }
 
-textarea{
-    border-radius: 6px;
-    border: 1px solid #000;
-    background: #EBEBEB;
-    resize: vertical;
-    font-size: 16px;
-    padding:5px 10px;
+.productSecondHead {
+    color: #ECECEC;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
-::placeholder {
+.productSecondContent{
+    border-radius: 10px;
+    resize: none;
+    width: 90%;
+    border: 2px solid rgba(255, 255, 255, 0.22);
+    background: rgba(255, 255, 255, 0.13);
+    font-family: Montserrat;
+    font-size: 15px;
+}
+
+::placeholder{
     color: #8E8E8E;
-    font-size: 16px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    text-align:center;
+    padding-top: 65px;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.productSecThird {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.productThirdHead {
+    color: #ECECEC;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+.productThirdContent {
+    position: relative;
+    overflow: hidden;
+    width: 83%;
+    border-radius: 10px;
+    padding: 10px 40px;
+    border: 2px solid rgba(255, 255, 255, 0.22);
+    background: rgba(255, 255, 255, 0.13);
   }
 
-.uploadResumeBlock{
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
+.productThirdInput{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
 }
 
-.uploadResumeBlockText{ 
-    border-radius: 6px;
-    border: 1px solid #000;
-    background: #EBEBEB;
-    resize: vertical;
-    color: #8E8E8E;
-    font-size: 16px;
-    padding:5px 10px;
-
-}
-
-.dropZone{
-
-}
-
-.uploadResumeBlockInput{
-}
-
-input{
-
-}
-
-p{
- padding: 5px 0px;
-}
-
-.uploadResumeBlockButton{
+.dragDrop {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-}
+    column-gap: 20px;
+  }
 
-.uploadResumeBlockButton button {
-    text-decoration: none;
-    cursor:pointer;
-    border-radius: 6px;
-    background: #D9D9D9;   
-    padding: 10px 0px;
-    width:140px; 
-    color:#4b4b4b;
-    font-size: 15px;
+.dragDropSign {
+  }
+.dragDropUploaded{
+    padding-right: 78px;
+    color: #D9D9D9;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
     font-weight: 500;
-    border: none;
-}
+    line-height: normal;
+  }
 
-.addResumeButtons{ 
-    padding-top: 30px;
+.dragDropText {
     display: flex;
     flex-direction: column;
-    text-decoration: none;
-    row-gap:20px;
-}
+    row-gap: 4px;
+    padding: 0px 370px 0px 140px;
+  }
 
-.addResumeButtons button {
-    color: #2678B8;
-    border-radius: 3px;
-    border: 1px solid #2678B8;
-    cursor:pointer;
-    background: #FFF;
-    font-size: 16px;
-    padding: 10px 20px;
-    width:fit-content;
+.dragDropTextTop {
+    color: #D9D9D9;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
     font-weight: 500;
-}
+    line-height: normal;
+  }
 
-.tabTwoWrapper{
+.dragDropTextBottom {
+    color: #D9D9D9;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+.dragDropButton {
+    border-radius: 11.01px;
+    background: rgba(217, 217, 217, 0.41);
+    border: none;
+    box-shadow: 3.957px 3.165px 5.935px 0px rgba(0, 0, 0, 0.25);
+  }
+
+.productSecFourth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* margin-right: 140px; */
+    row-gap: 24px;   
+}
+.productFourthButton {
+    width: 24%;
+    height: 45px;
+    border: none;
+    border-radius: 14px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    background: linear-gradient(96deg, #524EEF 9.83%, #F436F7 84.5%);
+}
     
 
-}
-.tabThreeWrapper {
+.productSecFifth {
 
 }
+.productResponse {
 
-.productRight {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 25px;
-    width: 100%;
-}
-
-img{
-    width: 300px;
-}
-
-.rightHeading{
-    color: #000B30;
-    font-size: 24px;
-    font-weight: 500;
-    width:500px;
-}
-
-.rightContent {
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-}
-
-.rightContentText {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    column-gap: 10px;
-    width: 500px;
-}
-
-.rightContentTextPoints{
-    color: #3B3B3B;
-    text-align: justify;
-    font-size: 14px;
-    font-weight: 400;
 }
