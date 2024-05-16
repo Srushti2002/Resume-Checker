@@ -33,7 +33,7 @@
   
   .slideActive {
     flex: 0 0 100%;
-    display: flex;
+    display: flex;    
     flex-direction: column;
     justify-content: center;
     row-gap: 2px;
@@ -44,8 +44,8 @@
   }
 
   .slideImg {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     object-fit: cover;
     position: absolute;
@@ -59,7 +59,7 @@
     font-size: 18px;
     font-weight: 600;
     padding: 0px 20px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     margin-top: 20px;
   }
 
@@ -75,7 +75,7 @@
     font-size: 15px;
     font-weight: 700;
     padding: 0px 20px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .slideLine {
@@ -83,7 +83,7 @@
     margin: 0px 10px;
     width:90%;
     background-color: #000;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .slideUdemy {
@@ -96,7 +96,7 @@
   }
   
   .carouselIndicator {
-    padding-top: 15px;
+    padding-top: 10px;
     transform: translateX(38%);
     display: flex;
     flex-direction: row;

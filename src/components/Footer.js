@@ -6,6 +6,7 @@ import TwitterLogo from '../svgFiles/twitterLogo';
 import YouTubeLogo from '../svgFiles/youTubeLogo';
 import styles from '../styles/Footer.module.css';
 
+
 export default function Footer() {
     const data = [
         {key:1,
@@ -14,10 +15,10 @@ export default function Footer() {
         listTwo: "Features",
         listThree: "History",
         listFour: "Account",
-        linkOne:"",
-        linkTwo:"",
-        linkThree:"",
-        linkFour:"",
+        linkOne:"https://www.indeed.com/hire/c/info/ats-software-tools-for-your-business",
+        linkTwo:"https://www.techtarget.com/searchhrsoftware/tip/Applicant-tracking-system-features-to-look-for",
+        linkThree:"https://www.onblick.com/blogs/the-evolution-of-applicant-tracking-system-a-historical-perspective",
+        linkFour:"https://gbjbuzz.com/career",
         },
         {key:2,
         heading:"Resources",
@@ -25,9 +26,9 @@ export default function Footer() {
         listTwo: "Articles",
         listThree: "Video",
         listFour: "Research",
-        linkOne:"",
-        linkTwo:"",
-        linkThree:"",
+        linkOne:"https://medium.com/@mr.gbjbuzz/gbj-buzz-igniting-business-evolution-and-fueling-expansion-opportunities-b713e43316ea",
+        linkTwo:"https://medium.com/@mr.gbjbuzz/breaking-through-boundaries-how-gbj-buzz-transforms-stagnant-businesses-into-success-stories-ccd806c5f79d",
+        linkThree:"https://youtu.be/Hw2nGZtoOhc?si=qL1Y0vJny0gafzeW",
         linkFour:"",
         },
         {key:3,
@@ -36,10 +37,10 @@ export default function Footer() {
         listTwo: "About us",
         listThree: "Parent Company",
         listFour: "Login",
-        linkOne:"",
-        linkTwo:"",
-        linkThree:"",
-        linkFour:"",
+        linkOne:"https://gbjbuzz.com/contact",
+        linkTwo:"https://gbjbuzz.com/about-us",
+        linkThree:"https://gbjbuzz.com/",
+        linkFour:"https://gbjbuzz.com/career",
         }
     ]
   return (
@@ -55,10 +56,10 @@ export default function Footer() {
                         <div className={styles.topRightList}>
                             <div className={styles.topRightListHeading}>{item.heading}</div>
                             <ul className={styles.topRightListMain}>
-                                <li><Link className={styles.listItem}>{item.listOne}</Link></li>
-                                <li><Link className={styles.listItem}>{item.listTwo}</Link></li>
-                                <li><Link className={styles.listItem}>{item.listThree}</Link></li>
-                                <li><Link className={styles.listItem}>{item.listFour}</Link></li>
+                                <li><Link to={item.linkOne} className={styles.listItem}>{item.listOne}</Link></li>
+                                <li><Link to={item.linkTwo} className={styles.listItem}>{item.listTwo}</Link></li>
+                                <li><Link to={item.linkThree} className={styles.listItem}>{item.listThree}</Link></li>
+                                <li><Link to={item.linkFour} className={styles.listItem}>{item.listFour}</Link></li>
                             </ul>
                         </div>
                     ))}
@@ -67,8 +68,8 @@ export default function Footer() {
             <div className={styles.footerBottom}>
                 <div className={styles.footerBottomHandles}>
                     <Link href="" className={styles.footerLinkedIn}><LinkedInLogo /></Link>
-                    <Link href="" className={styles.footerTwitter}><TwitterLogo /></Link>
-                    <Link href="" className={styles.footerYouTube}><YouTubeLogo /></Link>
+                    <Link href="https://twitter.com/gbjbuzz" className={styles.footerTwitter}><TwitterLogo /></Link>
+                    <Link href="https://youtu.be/FGJ6Xpu32nw?si=QiXFGUPDkIGBNO61" className={styles.footerYouTube}><YouTubeLogo /></Link>
                 </div>
                 <div className={styles.footerBottomLine}></div>
                 <div className={styles.footerBottomCopyright}>

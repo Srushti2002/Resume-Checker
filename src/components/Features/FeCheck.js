@@ -1,73 +1,55 @@
 import React from 'react';
-import Customization from '../../svgFiles/customization';
-import Typos from '../../svgFiles/typos';
-import StrongSummary from '../../svgFiles/strongSummary';
-import Mesuarable from '../../svgFiles/mesuarable';
-import WordChoice from '../../svgFiles/wordChoice';
-import Formatting from '../../svgFiles/formatting';
 import Custom from '../../images/custom.png';
 import Typo from '../../images/typo.png';
 import Summary from '../../images/summary.png';
 import Results from '../../images/results.png';
 import Choice from '../../images/choice.png';
 import Format from '../../images/format.png';
-import BlackBackground from '../../images/blackBackground.jpeg';
-import BackImg from '../../images/backImg.jpg';
 import styles from '../../styles/Features/FeCheck.module.css';
-import { useState } from 'react';
 
 
 export default function FeCheck() {
-
-    const [flippedCards, setFlippedCards] = useState([]);
-
-    const handleCardFlip = (index) => {
-        if (!flippedCards.includes(index)) {
-            setFlippedCards([...flippedCards, index]);
-        }
-    };
-
     const data = [
         {
             key:1,
             image: Custom,
             heading: "Customization",
-            para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+            para: "Ensure tailored content to match job requirements."
 
         },
         {
             key:2,
             image: Typo,
             heading: "Typos",
-            para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+            para: "Detect and correct spelling and grammatical errors."
 
         },
         {
             key:3,
             image: Summary,
             heading: "Strong Summary",
-            para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+            para: "Craft a compelling and concise career overview."
 
         },
         {
             key:4,
             image: Results,
             heading: "Measurable Results",
-            para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+            para: "Emphasize quantifiable achievements for impact."
 
         },
         {
             key:5,
             image: Choice,
             heading: "Word Choice",
-            para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+            para: "Optimize language for clarity and professionalism."
 
         },
         {
             key:6,
             image: Format,
             heading: "Formatting",
-            para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+            para: "Ensure consistent and visually appealing layout."
 
         }
     ]

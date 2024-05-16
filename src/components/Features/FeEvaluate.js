@@ -6,7 +6,7 @@ export default function FeEvaluate() {
   return (
     <div className={styles.evaluateWrapper}>
         <div className={styles.evaluateMain}>
-            <div className={styles.evaluateContain} data-aos="flip-up">
+            <div className={styles.evaluateContain} data-aos="fade-right">
                 <div className={styles.evaluateHeading}>Evaluate your resume with Intellirecruit</div>
                 <Link className={styles.evaluateLink} to="/product">Evaluate my resume</Link>
             </div>

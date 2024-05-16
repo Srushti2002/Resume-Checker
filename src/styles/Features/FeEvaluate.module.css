@@ -3,7 +3,7 @@
 }
 
 .evaluateMain {
-    padding: 50px 100px;
+    padding: 50px 200px;
     display: flex;
     flex-direction: column;
 }
@@ -11,8 +11,8 @@
 .evaluateContain {
     display: flex;
     flex-direction: column;
-    background-color: #B9EFFF;
-    clip-path: polygon(0% 0%, 95% 0%, 100% 100%, 5% 100%);
+    background-color: #60d9fe;
+    clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 5% 50%, 0% 0%);
     align-items: center;
     justify-content: center;
     row-gap: 50px;
@@ -23,6 +23,7 @@
     color: #000;
     font-size: 30px;
     font-weight: 600;
+    font-family: sans-serif;
 }
 
 .evaluateLink {  

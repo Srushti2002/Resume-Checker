@@ -20,14 +20,14 @@ export default function About() {
         mainHead: "Optimize evaluation with ",
         subHead: "real-time Global Connectivity.",
         content: "Experience unprecedented efficiency in your processes with our LLM-optimized solution, leveraging cutting-edge AI technology with Gemini-pro providing Realtime connectivity to data around the globe.",
-        button: "Get Started",
+        button: "Learn More",
         img: img2
         },
         {key: 3,
         mainHead: "Screening with AI Precision",
         subHead: "Find Your Perfect Match Effortlessly.",
         content: "Experience the power of AI-based screening to efficiently identify top candidates with unparalleled accuracy. Transform your hiring process with AI-powered screening, ensuring precise matches between candidates and your job criteria for optimal recruitment outcomes.",
-        button: "Get Started",
+        button: "Learn More",
         img: img3
         },
     ]

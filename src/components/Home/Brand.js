@@ -31,7 +31,7 @@ export default function Brand() {
     ]
   return (
     <div className={styles.brandWrapper}>
-        <div className={styles.brandMain} data-aos="flip-right">
+        <div className={styles.brandMain} data-aos="fade-up">
             {data.map((item, index)=> (
                 <ul 
                 className={styles.brandList}

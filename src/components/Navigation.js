@@ -42,7 +42,7 @@ export default function Navigation() {
                       <Link className={styles.linkStyle} to="/youtube"><TwitterLogo /></Link>
                       </li>
                       <li>
-                      <Link className={styles.linkStyle} to="/instagram"><YouTubeLogo /></Link>
+                      <Link className={styles.linkStyle} to="https://youtu.be/FGJ6Xpu32nw?si=QiXFGUPDkIGBNO61"><YouTubeLogo /></Link>
                       </li>
                     </ul>
                     

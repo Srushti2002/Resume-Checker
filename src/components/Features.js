@@ -10,7 +10,7 @@ import FeEvaluate from './Features/FeEvaluate';
 export default function Features() {
   React.useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 3000,
       once: false,
     })
   }, []);

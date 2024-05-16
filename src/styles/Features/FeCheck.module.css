@@ -89,8 +89,9 @@
 
   .cardText {
     color: #FFF;
-    font-size: 15px;
+    font-size: 18px;
     font-style: normal;
+    text-align: center;
     font-weight: 400;
     padding:10px 20px;
   }

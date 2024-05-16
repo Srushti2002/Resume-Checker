@@ -13,7 +13,7 @@ export default function FeQuotes() {
   useEffect(()=> {
     const interval = setInterval(() => {
       setIndex((prevIndex)=> (prevIndex === data.length -1 ? 0 : prevIndex + 1));
-    }, 2000);
+    }, 3000);
     return () => clearInterval(interval);
   }, []);
 
@@ -21,23 +21,26 @@ export default function FeQuotes() {
     {
       id: 1,
       image: Img1,
-      content: 'Enhance Executive has changed my life: Oneweek & four interviews later, I will be making 150% more doing the job I choose.',
-      name: 'JENICA',
+      content: `IntelliRecruit revolutionized our hiring process! We're consistently finding top-tier candidates who align perfectly with our company culture and requirements.`,
+      name: 'JENICA SMITH',
       post: 'SOLUTION ENGINEER',
+      company: "Udemy",
     },
     {
       id: 2,
       image: Img2,
-      content: 'Enhance Executive has changed my life: Oneweek & four interviews later, I will be making 150% more doing the job I choose.',
-      name: 'JENICA',
-      post: 'SOLUTION ENGINEER',
+      content: `As an HR professional, I've never seen such effective resumes. Thanks to IntelliRecruit, we're saving time and resources while attracting top talent effortlessly.`,
+      name: 'EMILY JOHNSON',
+      post: 'HR MANAGER',
+      company: "Coursera",
     },
     {
       id: 3,
       image: Img3,
-      content: 'Enhance Executive has changed my life: Oneweek & four interviews later, I will be making 150% more doing the job I choose.',
-      name: 'JENICA',
-      post: 'SOLUTION ENGINEER',
+      content: 'Using IntelliRecruit was a game-changer for us. Our recruitment efforts have become more targeted, resulting in faster hires and increased productivity across the board.',
+      name: 'DOROTHY LEE',
+      post: 'HR DIRECTOR',
+      company: "Udacity",
     },
   ];
   
@@ -51,12 +54,12 @@ export default function FeQuotes() {
                       <div
                       key={item.id}
                       className={idx === index ? styles.slideActive : styles.slide}>
-                        <img  className={styles.slideImg} src={item.image} />
+                        <img  className={styles.slideImg} src={item.image} alt="Img" />
                         <div className={styles.slideContent}>{item.content}</div>
                         <div className={styles.slideName}>{item.name}</div>
                         <div className={styles.slidePost}>{item.post}</div>
                         <div className={styles.slideLine}></div>
-                        <div className={styles.slideUdemy}>Udemy</div>
+                        <div className={styles.slideUdemy}>{item.company}</div>
                       </div>
                     ))}
                   </div>
