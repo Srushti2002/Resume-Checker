@@ -39,7 +39,7 @@ export default function Navigation() {
                       <Link target="_blank" className={styles.linkStyle} to="https://www.linkedin.com/company/gbj-buzz/?originalSubdomain=in"><LinkedInLogo /></Link>
                       </li>
                       <li>
-                      <Link target="_blank" className={styles.linkStyle} to="https://www.bing.com/ck/a?!&&p=a9f293e8754b8a33JmltdHM9MTcxNjA3NjgwMCZpZ3VpZD0xNjAyM2JhOS05NTcxLTYzM2UtMThhNy0yYTc2OTRkNzYyZDAmaW5zaWQ9NTE5OQ&ptn=3&ver=2&hsh=3&fclid=16023ba9-9571-633e-18a7-2a7694d762d0&psq=twitter+gbj+buzz&u=a1aHR0cHM6Ly90d2l0dGVyLmNvbS9nYmpidXp6&ntb=1"><TwitterLogo /></Link>
+                      <Link target="_blank" className={styles.linkStyle} to="https://twitter.com/gbjbuzz"><TwitterLogo /></Link>
                       </li>
                       <li>
                       <Link target="_blank" className={styles.linkStyle} to="https://youtu.be/FGJ6Xpu32nw?si=QiXFGUPDkIGBNO61"><YouTubeLogo /></Link>
