@@ -18,7 +18,7 @@ function App() {
   }
   return (
     <div className="appContainer">
-    {/* {videoPlayed ? (
+    {videoPlayed ? (
       <div className={`videoPlayer ${videoPlayed ? '' : 'hidden'}`}>
         <video 
         src={Video}
@@ -28,8 +28,8 @@ function App() {
         className="actualVideo"
         />
       </div>
-    ) : */}
-    {/* ( */}
+    ) :
+    ( 
       <Router className={`routerContent ${videoPlayed ? 'visible' : ''}`}>
       <Navigation />
         <Routes>
@@ -39,7 +39,7 @@ function App() {
         </Routes>
         <Footer />
     </Router>
-    {/* )} */}
+    )} 
     </div>
     );
 }

@@ -65,6 +65,7 @@ input {
 
 input::placeholder {
     color:#FFF;
+    font-size: 14px;
 }
 
 input:focus {

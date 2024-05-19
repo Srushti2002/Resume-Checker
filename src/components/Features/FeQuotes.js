@@ -74,7 +74,7 @@ export default function FeQuotes() {
                 </div>
                 <div className={styles.quoteText}>
                     <div className={styles.quoteHeading}>Your resume is an extension of yourself -make one that’s truly you</div>
-                    <Link className={styles.quoteButton}>Know more</Link>
+                    <Link to="https://hired.com/blog/candidates/write-ats-friendly-resume-2023-6-tips-reach-recruiters/" className={styles.quoteButton} target="_blank">Know more</Link>
                     <img className={styles.quoteReview} src={ReviewImg} alt="review Img" />
                 </div>
             </div>

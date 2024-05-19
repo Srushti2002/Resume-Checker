@@ -95,10 +95,9 @@
     color: #FFF;
     text-decoration: none;
     display: flex;
-    padding: 10px 20px;
+    padding: 10px 15px;
     background-origin: border-box;
     width: 21%;
-    padding: 10px;
     border: 2px solid transparent;
     background-image: linear-gradient(#000, #000),
       linear-gradient(120deg, #f09 0%, #0ff 50%, #9f0 100%);

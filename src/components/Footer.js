@@ -56,10 +56,10 @@ export default function Footer() {
                         <div className={styles.topRightList}>
                             <div className={styles.topRightListHeading}>{item.heading}</div>
                             <ul className={styles.topRightListMain}>
-                                <li><Link to={item.linkOne} className={styles.listItem}>{item.listOne}</Link></li>
-                                <li><Link to={item.linkTwo} className={styles.listItem}>{item.listTwo}</Link></li>
-                                <li><Link to={item.linkThree} className={styles.listItem}>{item.listThree}</Link></li>
-                                <li><Link to={item.linkFour} className={styles.listItem}>{item.listFour}</Link></li>
+                                <li><Link to={item.linkOne} target="_blank" className={styles.listItem}>{item.listOne}</Link></li>
+                                <li><Link to={item.linkTwo} target="_blank" className={styles.listItem}>{item.listTwo}</Link></li>
+                                <li><Link to={item.linkThree} target="_blank" className={styles.listItem}>{item.listThree}</Link></li>
+                                <li><Link to={item.linkFour} target="_blank" className={styles.listItem}>{item.listFour}</Link></li>
                             </ul>
                         </div>
                     ))}
@@ -67,9 +67,9 @@ export default function Footer() {
             </div>
             <div className={styles.footerBottom}>
                 <div className={styles.footerBottomHandles}>
-                    <Link href="" className={styles.footerLinkedIn}><LinkedInLogo /></Link>
-                    <Link href="https://twitter.com/gbjbuzz" className={styles.footerTwitter}><TwitterLogo /></Link>
-                    <Link href="https://youtu.be/FGJ6Xpu32nw?si=QiXFGUPDkIGBNO61" className={styles.footerYouTube}><YouTubeLogo /></Link>
+                    <Link target="_blank" to="https://www.linkedin.com/company/gbj-buzz/?originalSubdomain=in" className={styles.footerLinkedIn}><LinkedInLogo /></Link>
+                    <Link target="_blank" to="https://twitter.com/gbjbuzz" className={styles.footerTwitter}><TwitterLogo /></Link>
+                    <Link target="_blank" to="https://youtu.be/FGJ6Xpu32nw?si=QiXFGUPDkIGBNO61" className={styles.footerYouTube}><YouTubeLogo /></Link>
                 </div>
                 <div className={styles.footerBottomLine}></div>
                 <div className={styles.footerBottomCopyright}>

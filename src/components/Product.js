@@ -12,6 +12,10 @@ export default function Product() {
       once: true,
     })
   }, []);
+
+      const scrollToTop = () => {
+        window.scrollTo(0, 0);
+      };
   
   const [jobDescription, setJobDescription] = useState('');
   const [resume, setResume] = useState(null);

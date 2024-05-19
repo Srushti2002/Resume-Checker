@@ -5,6 +5,10 @@ import Arrow from '../../svgFiles/arrow';
 import styles from '../../styles/Home/Screener.module.css';
 
 export default function Screener() {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className={styles.screenWrapper}>
         <div className={styles.screenMain}>
@@ -13,7 +17,7 @@ export default function Screener() {
                 <div className={styles.screenSubHead}>Resume Screener</div>
                 <div className={styles.screenContent}>Explore an extensive expertise with generative AI</div>
                 <div className={styles.screenLine}></div>
-                <Link className={styles.screenButton}>Get started<Arrow /></Link>
+                <Link to="/product" onClick={scrollToTop} className={styles.screenButton}>Get started<Arrow /></Link>
             </div>
             <div className={styles.screenImg} data-aos="fade-up-left">
                 <img src={img}/>
