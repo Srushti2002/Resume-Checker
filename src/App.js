@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 import Video from "./Video/IntroVideo.mp4";
 
 function App() {
-  const [videoPlayed, setVideoPlayed] = useState(false);
+  const [videoPlayed, setVideoPlayed] = useState(true);
 
   const handleVideoEnd = () => {
     setVideoPlayed(false);
