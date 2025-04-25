@@ -1,189 +1,340 @@
-.productWrapper{
-    background-color: black;
+.productWrapper {
+  background-color: black;
 }
 .productMain {
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    justify-content: center;
-    row-gap: 40px;
-    padding:50px 150px ;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  row-gap: 40px;
+  padding: 50px 150px;
 }
 
 .productSecFirst {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
 }
 
 .productFirstHead {
-    color: #ECECEC;
-    font-family: Montserrat;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+  color: #ececec;
+  font-family: Montserrat;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
-.productFirstContent{
-    color: rgba(255, 255, 255, 0.92);
-    font-family: Montserrat;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+.productFirstContent {
+  color: rgba(255, 255, 255, 0.92);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 .productSecSecond {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
 }
 
 .productSecondHead {
-    color: #ECECEC;
-    font-family: Montserrat;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+  color: #ececec;
+  font-family: Montserrat;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
-.productSecondContent{
-    border-radius: 10px;
-    resize: none;
-    width: 90%;
-    border: 2px solid rgba(255, 255, 255, 0.22);
-    background: rgba(255, 255, 255, 0.13);
-    font-family: Montserrat;
-    font-size: 15px;
+.productSecondContent {
+  border-radius: 10px;
+  resize: none;
+  width: 90%;
+  border: 2px solid rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.13);
+  font-family: Montserrat;
+  font-size: 15px;
 }
 
-::placeholder{
-    color: #8E8E8E;
-    text-align:center;
-    padding-top: 65px;
-    font-family: Montserrat;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+::placeholder {
+  color: #8e8e8e;
+  text-align: center;
+  padding-top: 65px;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .productSecThird {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
 }
 
 .productThirdHead {
-    color: #ECECEC;
-    font-family: Montserrat;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-
+  color: #ececec;
+  font-family: Montserrat;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .productThirdContent {
-    position: relative;
-    overflow: hidden;
-    width: 83%;
-    border-radius: 10px;
-    padding: 10px 40px;
-    border: 2px solid rgba(255, 255, 255, 0.22);
-    background: rgba(255, 255, 255, 0.13);
-  }
+  position: relative;
+  overflow: hidden;
+  width: 83%;
+  border-radius: 10px;
+  padding: 10px 40px;
+  border: 2px solid rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.13);
+}
 
-.productThirdInput{
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
+.productThirdInput {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }
 
 .dragDrop {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    column-gap: 20px;
-  }
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 20px;
+}
 
 .dragDropSign {
-  }
-.dragDropUploaded{
-    padding-right: 78px;
-    color: #D9D9D9;
-    font-family: Montserrat;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-  }
+}
+.dragDropUploaded {
+  padding-right: 78px;
+  color: #d9d9d9;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
 
 .dragDropText {
-    display: flex;
-    flex-direction: column;
-    row-gap: 4px;
-    padding: 0px 370px 0px 140px;
-  }
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+  padding: 0px 370px 0px 140px;
+}
 
 .dragDropTextTop {
-    color: #D9D9D9;
-    font-family: Montserrat;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-  }
+  color: #d9d9d9;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
 
 .dragDropTextBottom {
-    color: #D9D9D9;
-    font-family: Montserrat;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
+  color: #d9d9d9;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 
 .dragDropButton {
-    border-radius: 11.01px;
-    background: rgba(217, 217, 217, 0.41);
-    border: none;
-    box-shadow: 3.957px 3.165px 5.935px 0px rgba(0, 0, 0, 0.25);
-  }
+  border-radius: 11.01px;
+  background: rgba(217, 217, 217, 0.41);
+  border: none;
+  box-shadow: 3.957px 3.165px 5.935px 0px rgba(0, 0, 0, 0.25);
+}
 
 .productSecFourth {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    /* margin-right: 140px; */
-    row-gap: 24px;   
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* margin-right: 140px; */
+  row-gap: 24px;
 }
 .productFourthButton {
-    color: #FFF;
-    text-decoration: none;
-    display: flex;
-    padding: 10px 20px;
-    background-origin: border-box;
-    width: 21%;
-    padding: 10px;
-    border: 2px solid transparent;
-    background-image: linear-gradient(#000, #000),
-      linear-gradient(120deg, #f09 0%, #0ff 50%, #9f0 100%);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-    border-radius: 40px;
-    background-size: 200% 100%;
-    font-family: Montserrat;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  padding: 10px 20px;
+  background-origin: border-box;
+  width: 21%;
+  padding: 10px;
+  border: 2px solid transparent;
+  background-image: linear-gradient(#000, #000),
+    linear-gradient(120deg, #f09 0%, #0ff 50%, #9f0 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  border-radius: 40px;
+  background-size: 200% 100%;
+  font-family: Montserrat;
 }
-    
 
 .productSecFifth {
-
 }
 .productResponse {
+}
 
+.responseContainer {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.13);
+  border-radius: 12px;
+  margin-top: 2rem;
+  backdrop-filter: blur(10px);
+  position: relative;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+
+.responseContainer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  border-radius: 12px;
+  background: linear-gradient(
+    267deg,
+    #00f0ff 4.01%,
+    #5200ff 57.55%,
+    #ff2df7 114.97%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.matchPercentage {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.percentageCircle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem auto;
+}
+
+.keywordsMissing {
+  margin-bottom: 2rem;
+}
+
+.keywordsMissing ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.keywordsMissing li {
+  background: rgba(217, 217, 217, 0.41);
+  padding: 0.5rem 1rem;
+  border-radius: 11.01px;
+  font-size: 0.9rem;
+  color: #d9d9d9;
+  box-shadow: 3.957px 3.165px 5.935px 0px rgba(0, 0, 0, 0.25);
+}
+
+.finalThoughts {
+  line-height: 1.6;
+}
+
+.responseContainer h2 {
+  color: #ececec;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-family: Montserrat;
+  font-weight: 500;
+}
+
+.finalThoughts p {
+  color: rgba(255, 255, 255, 0.92);
+  text-align: justify;
+  font-family: Montserrat;
+  font-size: 15px;
+}
+
+.resumeReview {
+  margin-bottom: 2rem;
+}
+
+.jobTitle {
+  font-size: 1.8rem;
+  background: linear-gradient(
+    267deg,
+    #00f0ff 4.01%,
+    #5200ff 57.55%,
+    #ff2df7 114.97%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 1rem;
+}
+
+.reviewIntro {
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.6;
+}
+
+.strengthsSection,
+.weaknessesSection,
+.assessmentSection {
+  margin-bottom: 2rem;
+}
+
+.strengthsSection ul,
+.weaknessesSection ul {
+  list-style: none;
+  padding: 0;
+}
+
+.strengthsSection li,
+.weaknessesSection li {
+  margin: 0.8rem 0;
+  padding: 1rem;
+  background: rgba(217, 217, 217, 0.13);
+  border-radius: 8px;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.strengthsSection li::before {
+  content: "✓";
+  color: #00f0ff;
+  position: absolute;
+  left: 0.8rem;
+}
+
+.weaknessesSection li::before {
+  content: "!";
+  color: #ff2df7;
+  position: absolute;
+  left: 0.8rem;
+}
+
+.assessmentSection p {
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.8;
+  padding: 1.5rem;
+  background: rgba(217, 217, 217, 0.13);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
